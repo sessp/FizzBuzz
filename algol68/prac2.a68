@@ -1,0 +1,17 @@
+INT currentnum;
+INT mod;
+INT modtwo;
+INT modthree;
+currentnum := 0;
+TO 100
+DO
+   currentnum +:= 1;
+   mod := currentnum MOD 15;
+   modtwo := currentnum MOD 5;
+   modthree := currentnum MOD 3;
+   (print (newline));
+   (mod = 0 | (print ("Fizzbuzz")) |: modtwo = 0 | (print ("Buzz")) |: modthree = 0 | (print ("Fizz")));
+   IF mod /= 0 AND modtwo /= 0 AND modthree /= 0 THEN
+       (print (currentnum));
+   FI;
+OD
